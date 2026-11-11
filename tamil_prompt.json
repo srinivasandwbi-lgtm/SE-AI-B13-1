@@ -1,0 +1,160 @@
+{
+  "requirements": {
+    "section_description": "Permanent generation rules. Keep these requirements unchanged when preparing new Tamil-themed image or video prompts.",
+    "purpose": "Create culturally authentic, visually coherent Tamil-themed images and short videos.",
+    "language": "English prompt instructions; preserve any Tamil dialogue or text exactly as supplied.",
+    "cultural_authenticity": [
+      "Represent the specified Tamil Nadu region, era, occasion, customs, clothing, architecture, food, and objects accurately.",
+      "Do not mix unrelated regional Indian traditions or use generic South Asian styling.",
+      "When a ritual or cultural detail is uncertain, do not invent it; use only details explicitly supplied or well-established for the stated context."
+    ],
+    "visual_quality": [
+      "Use realistic anatomy, natural facial expressions, believable hands, and detailed materials.",
+      "Maintain coherent perspective, lighting, shadows, scale, and environmental details.",
+      "Avoid artificial-looking skin, excessive retouching, oversaturation, and unnecessary visual effects."
+    ],
+    "continuity": [
+      "For videos or multiple frames, preserve each character's identity, age appearance, hairstyle, clothing, jewellery, and props.",
+      "Maintain consistency in location, era, time of day, weather, lighting, and colour treatment.",
+      "Use natural, physically plausible movement and smooth camera motion."
+    ],
+    "text_and_branding": [
+      "Do not add captions, subtitles, logos, signatures, or watermarks unless explicitly requested.",
+      "Render Tamil text only when exact wording is provided; preserve spelling and script."
+    ],
+    "generation_method": [
+      "Treat the editable template as the creative brief for the current generation.",
+      "Generate only the media type selected in the template.",
+      "Change only the relevant template fields for each new generation; keep these requirements unchanged.",
+      "Use sensible defaults for optional blank fields without inventing specific cultural practices."
+    ],
+    "global_negative_prompt": [
+      "inaccurate Tamil cultural details",
+      "mixed or unrelated regional traditions",
+      "generic stereotypical styling",
+      "distorted faces or anatomy",
+      "malformed hands or extra fingers",
+      "duplicate people or objects",
+      "inconsistent character appearance or wardrobe",
+      "unrealistic lighting or perspective",
+      "blurry or low-resolution output",
+      "unrequested text, captions, logos, or watermarks"
+    ]
+  },
+  "template": {
+    "section_description": "Editable fields for one image or video generation. Replace these values for the next creative task; retain the field structure unless the task requires a change.",
+    "template_name": "Tamil Visuals Prompt Template",
+    "template_version": "2.0",
+    "output": {
+      "media_type": "image",
+      "aspect_ratio": "16:9",
+      "resolution": "high",
+      "duration_seconds": null,
+      "frame_rate": null
+    },
+    "creative_direction": {
+      "subject": {
+        "description": "Describe the main person, people, object, or scene.",
+        "age_or_group": "Specify the age group or type of people, if relevant.",
+        "appearance": "Describe visible appearance, hairstyle, and other relevant details.",
+        "expression_or_mood": "Describe the intended expression or emotional tone.",
+        "pose_or_action": "Describe the subject's pose or action."
+      },
+      "setting": {
+        "location": "Specify the exact Tamil Nadu location or type of setting.",
+        "era": "Specify the historical period or contemporary era.",
+        "time_of_day": "Specify dawn, morning, afternoon, golden hour, evening, or night.",
+        "season_or_weather": "Specify season and weather.",
+        "background_details": [
+          "List relevant architecture, landscape, decor, and environmental details."
+        ]
+      },
+      "cultural_authenticity": {
+        "region_or_tradition": "Specify the Tamil region or tradition.",
+        "occasion": "Specify the festival, ceremony, family event, or everyday context.",
+        "clothing": "Specify attire, fabric, colours, and draping.",
+        "jewellery_and_accessories": "Specify relevant jewellery, flowers, and accessories.",
+        "architecture_and_props": "Specify buildings, utensils, furniture, tools, and props.",
+        "food_and_floral_details": "Specify dishes, serving style, flowers, and kolam, if relevant.",
+        "additional_authenticity_notes": "Add any important cultural details or restrictions for this scene."
+      },
+      "visual_style": {
+        "medium": "Photorealistic",
+        "genre": "Cinematic documentary",
+        "colour_palette": [
+          "Specify primary colour",
+          "Specify secondary colour",
+          "Specify accent colour"
+        ],
+        "texture_and_detail": "Specify desired texture and detail.",
+        "realism_level": "High"
+      },
+      "camera": {
+        "shot_type": "Medium-wide shot",
+        "angle": "Eye-level",
+        "lens_or_focal_length": "35mm",
+        "depth_of_field": "Natural depth of field",
+        "camera_movement": "Static for images; specify movement for videos."
+      },
+      "lighting": {
+        "type": "Soft natural light",
+        "direction": "Specify light direction.",
+        "mood": "Warm and inviting."
+      },
+      "composition": {
+        "framing": "Balanced composition.",
+        "subject_placement": "Specify subject placement.",
+        "visual_focus": "Specify the main visual focus.",
+        "safe_margins": "Keep important subjects and details within the frame."
+      },
+      "continuity": {
+        "identity_consistency": "Specify identity and appearance details to preserve.",
+        "scene_consistency": "Specify location, background, time, and lighting details to preserve.",
+        "motion_consistency": "Specify natural movement requirements for video."
+      }
+    },
+    "video": {
+      "enabled": false,
+      "duration_seconds": 8,
+      "aspect_ratio": "16:9",
+      "frame_rate": 24,
+      "timeline": [
+        {
+          "time": "0-2s",
+          "visual_action": "Establish the setting and introduce the subject."
+        },
+        {
+          "time": "2-6s",
+          "visual_action": "Show the main action with subtle, natural movement."
+        },
+        {
+          "time": "6-8s",
+          "visual_action": "End with a clear, visually pleasing composition."
+        }
+      ],
+      "camera_motion": "Slow, smooth push-in.",
+      "subject_motion": "Subtle, natural, physically plausible movement.",
+      "audio": {
+        "enabled": false,
+        "ambience": "Specify location-appropriate ambient sound, if required.",
+        "music": "Specify original instrumental music, if required.",
+        "dialogue": {
+          "enabled": false,
+          "language": "Tamil",
+          "exact_text": "",
+          "speaker": "",
+          "delivery": "Specify tone, pace, and emotion."
+        }
+      },
+      "transition": "Natural continuity with no unnecessary cuts."
+    },
+    "additional_negative_prompt": [
+      "Add scene-specific elements to avoid here."
+    ],
+    "generation_instructions": {
+      "instruction": "Generate the selected media type using the editable template while following all permanent requirements.",
+      "edit_strategy": "For each new generation, update only the relevant template values. Keep the requirements section unchanged.",
+      "empty_field_policy": "Use sensible defaults for optional blank fields. Do not invent exact dialogue, text, rituals, or historical details."
+    }
+  }
+}
